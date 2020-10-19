@@ -10,6 +10,24 @@
   <p th:if="${userName}">
     Hi [[${userName}]]
   </p>
+  <a href="/lec02?hand=0">ぐー</a>
+  <a href="/lec02?hand=1">ちょき</a>
+  <a href="/lec02?hand=2">ぱー</a>
+  <p th:if="${hand} == 0">
+    あなたの手 gu
+    相手の手 gu
+    結果 draw
+  </p>
+  <p th:if="${hand} == 1">
+    あなたの手 choki
+    相手の手 gu
+    結果 CPU win
+  </p>
+  <p th:if="${hand} == 2">
+    あなたの手 pa
+    相手の手 gu
+    結果 You win!
+  </p>
 </body>
 
 </html>
