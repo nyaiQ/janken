@@ -12,13 +12,13 @@
   </p>
   <h1>Lec02 GET!</h1>
   <p>エントリー</p>
-  <div th:if="${room}">
+  <div th:if="${entry}">
     <ul>
       <li th:each="user : ${entry.users}">[[${user}]]</li>
     </ul>
   </div>
-  <p th:if="${userName}">
-    Hi [[${userName}]]
+  <p th:if="${user}">
+    Hi [[${user}]]
   </p>
   <a href="/lec02?hand=0">ぐー</a>
   <a href="/lec02?hand=1">ちょき</a>
