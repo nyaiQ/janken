@@ -18,11 +18,11 @@ public class Entry {
     this.users.add(name);
   }
 
-  public int getRoomNo() {
+  public int getEntryNo() {
     return entryNo;
   }
 
-  public void setRoomNo(int entryNo) {
+  public void setEntryNo(int entryNo) {
     this.entryNo = entryNo;
   }
 
