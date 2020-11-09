@@ -22,9 +22,7 @@ public class Lec03AuthConfiguration extends WebSecurityConfigurerAdapter {
     // user2 pasSworD
     auth.inMemoryAuthentication().withUser("user2")
         .password("$2y$10$pbxhtDWId/O/yHXW7OyA8.Obud6ESjcAjmQF4s5lKTOJaAZlMHGUy").roles("USER");
-    // kashiwa
-    auth.inMemoryAuthentication().withUser("kashiwa")
-        .password("$2y$10$FGBEJhod3WuWj2MbXcAk0.5K6aSg67jx2QHBPitVFJkRugYufc0te").roles("USER");
+
   }
 
   @Bean
