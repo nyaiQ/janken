@@ -17,26 +17,16 @@
       <li th:each="user : ${entry.users}">[[${user}]]</li>
     </ul>
   </div>
-  <p th:if="${user}">
-    Hi [[${user}]]
+  <p th:if="${loginUser}">
+    Hi [[${loginUser}]]
   </p>
   <a href="/lec02?hand=0">ぐー</a>
   <a href="/lec02?hand=1">ちょき</a>
   <a href="/lec02?hand=2">ぱー</a>
-  <p th:if="${hand} == 0">
-    あなたの手 gu<br>
-    相手の手 gu<br>
-    結果 draw
-  </p>
-  <p th:if="${hand} == 1">
-    あなたの手 choki<br>
-    相手の手 gu<br>
-    結果 CPU win
-  </p>
-  <p th:if="${hand} == 2">
-    あなたの手 pa<br>
-    相手の手 gu<br>
-    結果 You win!
+  <p>
+  <div><a th:text="${Hand}"></a></div>
+  <div><a th:text="${Cpu}"></a></div>
+  <div><a th:text="${Result}"></a></div>
   </p>
 </body>
 

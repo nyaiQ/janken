@@ -7,23 +7,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class Entry {
   ArrayList<String> users = new ArrayList<>();
-  int entryNo = 1;
 
-  public void addUser(String name) {
-    for (String s : this.users) {
-      if (s.equals(name)) {
+  public void addUser(String userName) {
+    for (String user : this.users) {
+      if (userName.equals(user)) {
         return;
       }
     }
-    this.users.add(name);
-  }
-
-  public int getEntryNo() {
-    return entryNo;
-  }
-
-  public void setEntryNo(int entryNo) {
-    this.entryNo = entryNo;
+    this.users.add(userName);
   }
 
   public ArrayList<String> getUsers() {
